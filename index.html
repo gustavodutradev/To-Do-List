@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Minha Lista de Tarefas</h1>
+    </header>
+    <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
+    <br />
+    <section class="input-task-container">
+        <input type="text" id="texto-tarefa" placeholder="Digite aqui para adicionar a tarefa">
+        <button type="text" id="criar-tarefa">Criar Tarefa
+        </button>
+    </section>
+    <section class="task-list-container">
+        <ol id="lista-tarefas"></ol>
+    </section>
+    <section class="buttons-container">
+      <button id="apaga-tudo">Apagar</button>
+      <button id="remover-finalizados">Remover Finalizadas</button>
+      <button id="salvar-tarefas">Salvar tarefas</button>
+    </section>
+    <section class="saved-tasks-container">
+        <ul class="saved-tasks-list">
+        </ul>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>
