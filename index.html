@@ -11,11 +11,18 @@
 </head>
 
 <body>
-    <header>
-        <h1>Minha Lista de Tarefas</h1>
+    <header class="header">
+        <h1 class="header-title">Minha Lista de Tarefas</h1>
     </header>
-    <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
-    <br />
+    <section class="instructions-container">
+        <ul class="instructions-list">
+            <li class="instruction">Escreva e crie uma tarefa apertando o botão "Criar Tarefa"</li>
+            <li class="instruction">Clique na tarefa para selecioná-la</li>
+            <li class="instruction">Você pode salvar tarefas selecionadas clicando no botão de "Salvar tarefas"</li>
+            <li class="instruction">Clique duas vezes em um item para marcá-lo como completo</li>
+            <li class="instruction">Você pode excluir tarefas completas clicando no botão de "Remover Finalizadas"</li>
+        </ul>
+    </section>
     <section class="input-task-container">
         <input type="text" id="texto-tarefa" placeholder="Digite aqui para adicionar a tarefa">
         <button type="text" id="criar-tarefa">Criar Tarefa

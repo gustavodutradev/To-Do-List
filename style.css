@@ -1,3 +1,41 @@
+.header {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.instructions-container {
+    border: 1px solid red;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instruction {
+    list-style: none;
+    line-height: 1.5em;
+}
+
+.input-task-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid red 1px;
+    width: 100%;
+    justify-content: center;
+    gap: 1em;
+}
+
+.task-list-container {
+    border: solid red 1px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .completed {
     text-decoration: line-through;
 }
