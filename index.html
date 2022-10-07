@@ -11,28 +11,34 @@
 </head>
 
 <body>
-    <header>
-        <h1>Minha Lista de Tarefas</h1>
+    <header class="header navbar navbar-dark bg-dark">
+        <h1 class="header-title">To Do List</h1>
     </header>
-    <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
-    <br />
-    <section class="input-task-container">
-        <input type="text" id="texto-tarefa" placeholder="Digite aqui para adicionar a tarefa">
-        <button type="text" id="criar-tarefa">Criar Tarefa
-        </button>
-    </section>
-    <section class="task-list-container">
-        <ol id="lista-tarefas"></ol>
-    </section>
-    <section class="buttons-container">
-      <button id="apaga-tudo">Apagar</button>
-      <button id="remover-finalizados">Remover Finalizadas</button>
-      <button id="salvar-tarefas">Salvar tarefas</button>
-    </section>
-    <section class="saved-tasks-container">
-        <ul class="saved-tasks-list">
-        </ul>
-    </section>
+    <main class="main">
+            <section class="input-task-container">
+                <section class="buttons-container">
+                    <button id="apaga-tudo" class="btn btn-outline-warning">Clear List</button>
+                    <button id="remover-finalizados" class="btn btn-outline-danger">Remove finished</button>
+                    <button id="salvar-tarefas" class="btn btn-outline-success">Save Task</button>
+                </section>
+                <section class="add-task-container">
+                    <input type="text" id="texto-tarefa"class="form-control" placeholder="Ex: Doctor at 6 pm">
+                    <button type="text" id="criar-tarefa" class="btn btn-outline-primary">Add
+                    </button>
+                </section>
+            </section>
+        </main>
+        <section class="lists-container">
+            <section class="task-list-container">
+                <h4>Tasks</h4>
+                <ol id="lista-tarefas" class="list-group list-group-numbered"></ol>
+            </section>
+            <section class="saved-tasks-container">
+                <h4 class="saved-tasks-title">Saved Tasks</h4>
+                <ul class="saved-tasks-list list-group list-group-flush">
+                </ul>
+            </section>
+        </section>
 </body>
 <script src="script.js"></script>
 

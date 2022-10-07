@@ -1,7 +1,84 @@
+.header {
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.header-title {
+    width: 100%;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.lists-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: 0 auto;
+    align-items: center;
+    height: 100%;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 1em;
+}
+.add-task-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 1em;
+}
+.input-task-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin: 1em auto;
+}
+
+.task-list-container {
+    border-right: 1px solid rgba(0, 0, 0, 0.242);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.saved-tasks-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 1em;
+}
+
+#texto-tarefa {
+    width: 50%;
+}
+
 .completed {
     text-decoration: line-through;
 }
 
 .selecionada {
-    background-color: gray;
+    background-color: rgba(0, 0, 0, 0.169);
 }

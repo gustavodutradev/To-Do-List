@@ -12,6 +12,7 @@ taskButton.addEventListener('click', () => {
   if (taskInput.value !== '') {
     const task = document.createElement('li');
     task.classList = 'tarefa';
+    task.classList.add('list-group-item');
     task.innerText = taskInput.value;
     taskList.appendChild(task);
     taskInput.value = '';
@@ -45,7 +46,7 @@ taskList.addEventListener('dblclick', ({ target }) => {
 // Cria evento que limpa tarefas quando clicado
 
 clearAllButton.addEventListener('click', () => {
-  taskList.remove();
+  taskList.innerHTML = '';
 });
 
 // Cria evento que limpa tarefas concluídas quando clicado
@@ -73,6 +74,7 @@ saveTasks.addEventListener('click', () => {
     const savedTask = document.createElement('li');
     savedTasksList.appendChild(savedTask);
     savedTask.classList = 'saved-task';
+    savedTask.classList.add('list-group-item');
     savedTask.innerText = task;
   });
   const taskToRemove = document.querySelector('.selecionada');
