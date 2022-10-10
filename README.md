@@ -1,3 +1,4 @@
-# Project-Trybe-Warts
+# Project-ToDo-List
 
-![Trybe-Warts-Preview](https://i.imgur.com/7cxc2l1.gif)
+![Project-ToDo-List-Preview](https://i.imgur.com/riWZK4t.gif)
+
